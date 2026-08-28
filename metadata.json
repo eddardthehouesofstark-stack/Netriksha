@@ -1,0 +1,6 @@
+{
+  "name": "Netriksha",
+  "description": "Explainable AI Diabetic Retinopathy Screening and Tele-Ophthalmology Platform for Rural Healthcare in Bharat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
