@@ -153,6 +153,12 @@ npm run build
 npm run preview
 ```
 
+### Deploying to GitHub Pages
+
+1. In your GitHub repository, navigate to **Settings** > **Pages**.
+2. Under **Build and deployment** > **Source**, select **GitHub Actions** (recommended) or choose the `gh-pages` branch if deploying manually.
+3. Once you push your code, the included `.github/workflows/deploy.yml` workflow will automatically build and publish the site.
+
 ---
 
 ## 📂 Project Structure
