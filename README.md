@@ -155,9 +155,26 @@ npm run preview
 
 ### Deploying to GitHub Pages
 
+You have two easy options to deploy:
+
+#### Option A: One-Command Deployment (Recommended)
+Run the deploy script directly from your terminal:
+```bash
+npm run deploy
+```
+*This automatically builds the project (`dist/`) and pushes the compiled assets to the `gh-pages` branch.*
+
+Then, on GitHub:
+1. Go to **Settings** > **Pages**.
+2. Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
+3. Select Branch: **`gh-pages`** / Folder: **`/(root)`** and click **Save**.
+
+---
+
+#### Option B: GitHub Actions Automated CI/CD
 1. In your GitHub repository, navigate to **Settings** > **Pages**.
-2. Under **Build and deployment** > **Source**, select **GitHub Actions** (recommended) or choose the `gh-pages` branch if deploying manually.
-3. Once you push your code, the included `.github/workflows/deploy.yml` workflow will automatically build and publish the site.
+2. Under **Build and deployment** > **Source**, select **GitHub Actions**.
+3. Push your repository to GitHub; the `.github/workflows/deploy.yml` workflow will automatically compile and deploy your application on every push.
 
 ---
 
